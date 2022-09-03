@@ -6,9 +6,3 @@ export class User {
 }
 
 export const UserModel = getModelForClass(User);
-
-const user = new UserModel({name: 'John'});
-
-user.save().then((val) => {
-    console.log(val);
-});
